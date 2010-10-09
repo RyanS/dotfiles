@@ -1,0 +1,44 @@
+alias h='history | tail -n 25'
+
+#editing aliases
+alias reload="source ~/bin/dotfiles/bashrc"
+alias ea="mvim ~/bin/dotfiles/bash/aliases && reload"
+
+#common directories
+alias oocode="cd ~/Sites/oo_code_v4"
+alias adms="cd ~/Sites/admonitor/AdmonitorServer"
+alias admc="cd ~/Sites/admonitor/AdmonitorClient"
+alias prot="cd ~/Sites/prototypes"
+
+#functions
+function take {
+  mkdir $1
+  cd $1
+}
+
+# ----------------------------------------------------------------------
+# LS AND DIRCOLORS
+# ----------------------------------------------------------------------
+
+# we always pass these to ls(1)
+LS_COMMON="-hBG"
+
+# if the dircolors utility is available, set that up to
+dircolors="$(type -P gdircolors dircolors | head -1)"
+test -n "$dircolors" && {
+    COLORS=/etc/DIR_COLORS
+    test -e "/etc/DIR_COLORS.$TERM" && COLORS="/etc/DIR_COLORS.$TERM"
+    test -e "$HOME/bin/bash/dircolors" && COLORS="$HOME/bin/bash/dircolors"
+    test ! -e "$COLORS" && COLORS=
+    eval `$dircolors --sh $COLORS`
+}
+unset dircolors
+
+# setup the main ls alias if we've established common args
+test -n "$LS_COMMON" &&
+alias ls="command ls $LS_COMMON"
+
+# these use the ls aliases above
+alias ll="ls -l"
+alias l.="ls -d .*"
+

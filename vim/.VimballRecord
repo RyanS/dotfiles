@@ -1,0 +1,3 @@
+supertab.vba: call delete('/Users/ryan/.vim/doc/supertab.txt')|call delete('/Users/ryan/.vim/plugin/supertab.vim')
+snippy_plugin.vba: call delete('/Users/ryan/.vim/plugin/snippetsEmu.vim')|call delete('/Users/ryan/.vim/doc/snippets_emu.txt')
+loremipsum.vba: call delete('/Users/ryan/.vim/autoload/loremipsum.vim')|call delete('/Users/ryan/.vim/autoload/loremipsum.txt')|call delete('/Users/ryan/.vim/plugin/loremipsum.vim')|call delete('/Users/ryan/.vim/doc/loremipsum.txt')

@@ -1,4 +1,5 @@
 alias h='history | tail -n 25'
+alias scd='pushd . && cd'
 
 #editing aliases
 alias reload="source ~/bin/dotfiles/bashrc"
@@ -15,6 +16,7 @@ function take {
   mkdir $1
   cd $1
 }
+
 
 # ----------------------------------------------------------------------
 # LS AND DIRCOLORS

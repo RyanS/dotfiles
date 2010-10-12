@@ -1,5 +1,6 @@
 alias h='history | tail -n 25'
 alias scd='pushd . && cd'
+alias gitx='open /Applications/GitX.app'
 
 #editing aliases
 alias reload="source ~/bin/dotfiles/bashrc"
@@ -10,6 +11,7 @@ alias oocode="cd ~/Sites/oo_code_v4"
 alias adms="cd ~/Sites/admonitor/AdmonitorServer"
 alias admc="cd ~/Sites/admonitor/AdmonitorClient"
 alias prot="cd ~/Sites/prototypes"
+alias drop="cd ~/Dropbox/public"
 
 #functions
 function take {

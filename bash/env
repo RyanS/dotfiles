@@ -1,4 +1,4 @@
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/bin
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/bin:/usr/local/sbin
 export EDITOR='vim'
 export CLICOLOR=1
 #export LSCOLORS="DxfxcxdxbxegDbabagacad"
@@ -7,6 +7,8 @@ export EXPRESS_ENV="development"
 export HISTIGNORE="&:ls:[bf]g:exit:h"
 
 bind "set completion-ignore-case on"
+
+if [[ -s /Users/ryan/.rvm/scripts/rvm ]] ; then source /Users/ryan/.rvm/scripts/rvm ; fi
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion

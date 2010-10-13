@@ -1,0 +1,27 @@
+[submodule "vim/bundle/vividchalk"]
+	path = vim/bundle/vividchalk
+	url = http://github.com/tpope/vim-vividchalk.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = http://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = http://github.com/tpope/vim-surround.git
+[submodule "vim/bundle/pastie"]
+	path = vim/bundle/pastie
+	url = http://github.com/tpope/vim-pastie.git
+[submodule "vim/bundle/ragtag"]
+	path = vim/bundle/ragtag
+	url = http://github.com/tpope/vim-ragtag.git
+[submodule "vim/bundle/snipmate"]
+	path = vim/bundle/snipmate
+	url = http://github.com/msanders/snipmate.vim.git
+[submodule "vim/bundle/nerdcommenter"]
+	path = vim/bundle/nerdcommenter
+	url = http://github.com/scrooloose/nerdcommenter.git
+[submodule "vim/bundle/vim-javascript"]
+	path = vim/bundle/vim-javascript
+	url = http://github.com/pangloss/vim-javascript.git
+[submodule "vim/bundle/endwise"]
+	path = vim/bundle/endwise
+	url = http://github.com/tpope/vim-endwise.git

@@ -1,7 +1,10 @@
+set nocompatible
+
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+
 :syntax enable
-:colorscheme Neverness 
+:colorscheme vividchalk 
 set softtabstop=2
 set autoindent
 set smartindent
@@ -15,7 +18,6 @@ set noswapfile
 set number
 filetype on
 filetype plugin on
-set nocompatible
 set guifont=Inconsolata:h12
 set wildmenu
 set hlsearch

@@ -1,3 +1,5 @@
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 :syntax enable
 :colorscheme Neverness 
 set softtabstop=2

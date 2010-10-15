@@ -1,6 +1,7 @@
 alias h='history | tail -n 25'
 alias scd='pushd . && cd'
 alias gitx='open /Applications/GitX.app'
+alias vows="export NODE_ENV=test && vows"
 
 #editing aliases
 alias reload="source ~/bin/dotfiles/bashrc"

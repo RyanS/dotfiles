@@ -4,7 +4,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 :syntax enable
-:colorscheme vividchalk 
+:colorscheme molokai 
 set softtabstop=2
 set autoindent
 set smartindent

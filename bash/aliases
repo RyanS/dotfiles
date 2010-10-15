@@ -12,6 +12,7 @@ alias adms="cd ~/Sites/admonitor/AdmonitorServer"
 alias admc="cd ~/Sites/admonitor/AdmonitorClient"
 alias prot="cd ~/Sites/prototypes"
 alias drop="cd ~/Dropbox/public"
+alias odrop="open ~/Dropbox/public"
 alias dotfiles="cd ~/bin/dotfiles"
 
 #functions

@@ -5,6 +5,7 @@ alias gitx='open /Applications/GitX.app'
 #editing aliases
 alias reload="source ~/bin/dotfiles/bashrc"
 alias ea="mvim ~/bin/dotfiles/bash/aliases && reload"
+alias esnip="rmvim ~/bin/dotfiles/vim/after/snippets"
 
 #common directories
 alias oocode="cd ~/Sites/oo_code_v4"

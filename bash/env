@@ -3,7 +3,7 @@ export EDITOR='vim'
 export CLICOLOR=1
 #export LSCOLORS="DxfxcxdxbxegDbabagacad"
 export NODE_PATH="/usr/local/lib/node"
-export EXPRESS_ENV="development"
+export NODE_ENV="development"
 export HISTIGNORE="&:ls:[bf]g:exit:h"
 
 bind "set completion-ignore-case on"

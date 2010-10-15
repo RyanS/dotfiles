@@ -21,6 +21,9 @@ function take {
   cd $1
 }
 
+function rmvim {
+  mvim -c "cd $1"  
+}
 
 # ----------------------------------------------------------------------
 # LS AND DIRCOLORS

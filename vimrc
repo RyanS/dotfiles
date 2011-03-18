@@ -92,5 +92,3 @@ let g:fuzzy_matching_limit = 60
 nnoremap <leader>b :FufBuffer<CR>
 nmap <leader>fb :FufBuffer<CR>
 nmap <leader>ff :FufFile<CR>
-
-

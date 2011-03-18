@@ -14,5 +14,5 @@
   df = diff
   lg = log -p
 [user]
-	name = Ryan Szulczewski
-	email = musicmanryan@gmail.com
+  name = Ryan Szulczewski
+  email = musicmanryan@gmail.com

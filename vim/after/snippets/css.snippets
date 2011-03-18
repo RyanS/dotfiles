@@ -334,6 +334,8 @@ snippet bw border-width: all
 	border-width: ${1:1}${2:px};$0
 snippet b border
 	border: ${1:1px} ${2:solid} #${3:999};$0
+snippet bo bottom
+	bottom: ${1:5px}
 snippet csb caption-side: bottom
 	caption-side: bottom;$0
 snippet cs caption-side: bottom
@@ -581,7 +583,9 @@ snippet pp padding: 0
 snippet p padding: all
 	padding: ${1:1}${2:em};$0
 snippet poa position: absolute
-	position: absolute;$0
+	${1:left}: ${2:10}px;
+	position: absolute;
+	${3:top}: ${4:10}px;$0
 snippet po position: absolute
 	position: absolute;$0
 snippet pof position: fixed

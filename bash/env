@@ -13,3 +13,4 @@ if [[ -s /Users/ryan/.rvm/scripts/rvm ]] ; then source /Users/ryan/.rvm/scripts/
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+

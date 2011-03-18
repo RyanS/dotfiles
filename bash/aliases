@@ -3,6 +3,8 @@ alias scd='pushd . && cd'
 alias gitx='open /Applications/GitX.app'
 alias vows="export NODE_ENV=test && vows"
 alias node="export NODE_ENV=development && node"
+alias cb="/Users/ryan/src/google-closure-library/closure/bin/build/closurebuilder.py --root=/Users/ryan/src/google-closure-library/ --output_mode=compiled  --compiler_jar=/usr/local/Cellar/closure-compiler/20100917/libexec/compiler.jar --compiler_flags='--compilation_level=ADVANCED_OPTIMIZATIONS' --compiler_flags='--output_wrapper=\"(function() {%output%})();\"'"
+alias writedeps="/Users/ryan/src/google-closure-library/closure/bin/build/depswriter.py" 
 
 #editing aliases
 alias reload="source ~/bin/dotfiles/bashrc"
@@ -17,6 +19,7 @@ alias prot="cd ~/Sites/prototypes"
 alias drop="cd ~/Dropbox/public"
 alias odrop="open ~/Dropbox/public"
 alias dotfiles="cd ~/bin/dotfiles"
+alias usablenet="cd ~/Sites/mobile_cc_unet_nodejs"
 
 #functions
 function take {
@@ -53,4 +56,5 @@ alias ls="command ls $LS_COMMON"
 # these use the ls aliases above
 alias ll="ls -l"
 alias l.="ls -d .*"
+alias lst="ls -t | head"
 

@@ -4,7 +4,8 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 :syntax enable
-:colorscheme molokai 
+set background=dark
+:colorscheme solarized
 set softtabstop=2
 set autoindent
 set smartindent
@@ -92,3 +93,22 @@ let g:fuzzy_matching_limit = 60
 nnoremap <leader>b :FufBuffer<CR>
 nmap <leader>fb :FufBuffer<CR>
 nmap <leader>ff :FufFile<CR>
+
+:command W w
+nmap <leader>ftj :set ft=javascript<CR>
+nmap <leader>fth :set ft=html<CR>
+nmap <leader>ftc :set ft=css<CR>
+
+let mapleader=','
+if exists(":Tabularize")
+  nmap <Leader>a= :Tabularize /=<CR>
+  vmap <Leader>a= :Tabularize /=<CR>
+  nmap <Leader>a: :Tabularize /:\zs<CR>
+  vmap <Leader>a: :Tabularize /:\zs<CR>
+endif
+
+if has("gui_running")
+    set guioptions=egmrt
+endif
+
+nnoremap <leader>yr :YRShow<CR>

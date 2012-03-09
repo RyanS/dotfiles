@@ -13,22 +13,20 @@ alias ea="mvim ~/bin/dotfiles/bash/aliases && reload"
 alias esnip="rmvim ~/bin/dotfiles/vim/after/snippets"
 alias git=hub
 
-#common directories
-alias oocode="cd ~/Sites/oo_code_v4"
-alias adms="cd ~/Sites/admonitor/AdmonitorServer"
-alias admc="cd ~/Sites/admonitor/AdmonitorClient"
-alias prot="cd ~/Sites/prototypes"
-alias drop="cd ~/Dropbox/public"
 alias odrop="open ~/Dropbox/public"
-alias dotfiles="cd ~/bin/dotfiles"
-alias usablenet="cd ~/Sites/mobile_gateway"
-alias dc="cd ~/Sites/dialogcentral"
 
 
 #functions
 function take {
   mkdir $1
   cd $1
+}
+
+function grm {
+  git rm $1
+  git ci -m "Removing desktop file"
+  git mv ${1/html/iphone} $1
+  git ci -m "Renaming mobile file to desktop"
 }
 
 function rmvim {

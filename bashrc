@@ -1,7 +1,7 @@
 . ~/bin/dotfiles/bash/env
 . ~/bin/dotfiles/bash/config
 . ~/bin/dotfiles/bash/aliases
-
+. ~/bin/dotfiles/bash/bashmarks.sh
 
 #prompt() {
   #git=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'`

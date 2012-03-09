@@ -5,7 +5,7 @@ call pathogen#helptags()
 
 :syntax enable
 set background=dark
-:colorscheme solarized
+:colorscheme molokai
 set softtabstop=2
 set autoindent
 set smartindent
@@ -112,3 +112,5 @@ if has("gui_running")
 endif
 
 nnoremap <leader>yr :YRShow<CR>
+let g:yankring_history_dir = '~/src/'
+cmap w!! %!sudo tee > /dev/null %

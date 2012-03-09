@@ -1,10 +1,5 @@
 alias h='history | tail -n 25'
-alias scd='pushd . && cd'
 alias gitx='open /Applications/GitX.app'
-alias vows="export NODE_ENV=test && vows"
-alias node="export NODE_ENV=development && node"
-alias cb="/Users/ryan/src/google-closure-library/closure/bin/build/closurebuilder.py --root=/Users/ryan/src/google-closure-library/ --output_mode=compiled  --compiler_jar=/usr/local/Cellar/closure-compiler/20100917/libexec/compiler.jar --compiler_flags='--compilation_level=ADVANCED_OPTIMIZATIONS' --compiler_flags='--output_wrapper=\"(function() {%output%})();\"'"
-alias writedeps="/Users/ryan/src/google-closure-library/closure/bin/build/depswriter.py" 
 alias distroinfo="dmesg | head -1"
 
 #editing aliases

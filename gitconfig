@@ -5,7 +5,7 @@
   branch = auto
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	excludesfile = /Users/ryan/.gitignore
+  excludesfile = /Users/musicmanryan/.gitignore
 [alias]
   st = status
   ci = commit
@@ -17,5 +17,5 @@
   name = Ryan Szulczewski
   email = musicmanryan@gmail.com
 [github]
-	user = RyanS
-	token = 764fecb3aae13342d85536eebe0bbb82
+  user = RyanS
+  token = 764fecb3aae13342d85536eebe0bbb82

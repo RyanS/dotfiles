@@ -113,4 +113,7 @@ endif
 
 nnoremap <leader>yr :YRShow<CR>
 let g:yankring_history_dir = '~/src/'
+
 cmap w!! %!sudo tee > /dev/null %
+
+let g:ctrlp_map = '<c-t>'

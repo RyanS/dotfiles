@@ -38,4 +38,4 @@ BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
 
-PS1="\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$NO_COLOR\] \[$RED\]\$(~/.rvm/bin/rvm-prompt)\n♠ \[$NO_COLOR\]"
+PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$NO_COLOR\] \[$RED\]\$(~/.rvm/bin/rvm-prompt)\n♠ \[$NO_COLOR\]"

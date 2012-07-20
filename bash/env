@@ -6,7 +6,11 @@ export HISTIGNORE="&:ls:[bf]g:exit:h"
 bind "set completion-ignore-case on"
 set -o vi
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+[ -f ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh ] && source ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh
 

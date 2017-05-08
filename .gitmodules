@@ -58,3 +58,6 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/dragvisuals"]
+	path = vim/bundle/dragvisuals
+	url = https://github.com/atweiden/vim-dragvisuals

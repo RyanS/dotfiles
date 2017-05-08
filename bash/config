@@ -38,4 +38,17 @@ BMAGENTA='\e[45m'
 BCYAN='\e[46m'
 BWHITE='\e[47m'
 
-PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$NO_COLOR\] \[$RED\]\$(~/.rvm/bin/rvm-prompt)\n♠ \[$NO_COLOR\]"
+# prompt with ruby version
+__chruby_ps1 ()
+{
+  rbenv_ruby_version=`chruby | grep '*' | sed -e 's/* //'`
+  printf $rbenv_ruby_version
+}
+
+__node_ps1 ()
+{
+  printf `node --version`
+}
+
+#PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$NO_COLOR\] \[$RED\]\$(~/.rvm/bin/rvm-prompt)\n♠ \[$NO_COLOR\]"
+PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$RED\]$(__chruby_ps1) \[$UGREEN\]\$(__node_ps1)\[$NO_COLOR\]\n\[$RED\]♠ \[$NO_COLOR\]"

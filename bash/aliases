@@ -1,15 +1,11 @@
 alias h='history | tail -n 25'
-alias gitx='open /Applications/GitX.app'
 alias distroinfo="dmesg | head -1"
 
 #editing aliases
 alias reload="source ~/bin/dotfiles/bashrc"
 alias ea="mvim ~/bin/dotfiles/bash/aliases && reload"
-alias esnip="rmvim ~/bin/dotfiles/vim/after/snippets"
 alias git=hub
-
-alias odrop="open ~/Dropbox/public"
-
+alias egitconfig="vim ~/.gitconfig"
 
 #functions
 function take {
@@ -17,16 +13,8 @@ function take {
   cd $1
 }
 
-function grm {
-  git rm $1
-  git ci -m "Removing desktop file"
-  git mv ${1/html/iphone} $1
-  git ci -m "Renaming mobile file to desktop"
-}
-
-function rmvim {
-  mvim -c "cd $1"  
-}
+#list custom aliases
+alias ls_aliases="compgen -a"
 
 # ----------------------------------------------------------------------
 # LS AND DIRCOLORS
@@ -55,3 +43,9 @@ alias ll="ls -l"
 alias l.="ls -d .*"
 alias lst="ls -t | head"
 
+alias be="bundle exec "
+
+alias cucumber="cucumber -b -f pretty"
+
+alias pg_start="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias pg_stop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"

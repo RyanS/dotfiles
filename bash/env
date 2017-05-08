@@ -1,16 +1,32 @@
-export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/bin:/usr/local/sbin:$PATH
+export PATH=./bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/local/share/npm/bin:~/bin:/usr/local/sbin:$HOME/.yarn/bin:$PATH
 export EDITOR=/usr/bin/vim
 export CLICOLOR=1
 export HISTIGNORE="&:ls:[bf]g:exit:h"
+export CPPFLAGS=-I/opt/X11/include
+export RUBYOPT=rubygems
+export TEST_ENV_NUMBER=8
+export HUBOT_GITHUB_TOKEN=e5c910e811ac9428c6342613f4b321210dc64ecc 
+export IGNOREEOF=42
 
 bind "set completion-ignore-case on"
-set -o vi
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-[ -f ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh ] && source ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh
+#[ -f ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh ] && source ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh
 
+# chruby!
+[[ ! -a /usr/local/opt/chruby/share/chruby/chruby.sh ]] || source /usr/local/opt/chruby/share/chruby/chruby.sh
+[[ ! -a /usr/local/opt/chruby/share/chruby/auto.sh ]] || source /usr/local/opt/chruby/share/chruby/auto.sh
+
+set -o vi
+
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'
+
+export NVM_DIR=~/.nvm
+source ~/.nvm/nvm.sh

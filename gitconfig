@@ -12,10 +12,32 @@
   br = branch
   co = checkout
   df = diff
-  lg = log -p
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  shlg = log --pretty=oneline --abbrev-commit
+  bbt = !git for-each-ref --sort='-authordate' --format='%(refname)\t%(authordate)' refs/heads | sed -e 's-refs/heads/--' | column -t
+  unstage = reset HEAD
+  delete-merged-branches = "!git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+  interactive-delete = "!git branch | peco | xargs -I {} git branch -D {}"
+  aliases = config --get-regexp alias
+
+  last-tag = "!git describe --tags $(git rev-list --tags --max-count=1)"
+
+  cpbranch = "!f() { git rev-parse --abbrev-ref HEAD | pbcopy; }; f"
+
+  # Checkout our version of a file and add it
+  ours = "!f() { git checkout --ours $@ && git add $@; }; f"
+  # # Checkout their version of a file and add it
+  theirs = "!f() { git checkout --theirs $@ && git add $@; }; f"
+
+  # @wip [ci skip] Initial attempt at abstracting all the things
+  wip = "!sh -c 'git add -A . && git status && git commit -m \"@wip [ci skip] $1\"' -"
 [user]
-  name = Ryan Szulczewski
+	name = Ryan Szulczewski
   email = musicmanryan@gmail.com
 [github]
   user = RyanS
   token = 764fecb3aae13342d85536eebe0bbb82
+[push]
+  default = current
+[remote "origin"]
+	prune = true

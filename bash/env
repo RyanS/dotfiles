@@ -8,25 +8,15 @@ export TEST_ENV_NUMBER=8
 export HUBOT_GITHUB_TOKEN=e5c910e811ac9428c6342613f4b321210dc64ecc 
 export IGNOREEOF=42
 
-bind "set completion-ignore-case on"
-
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
-#[ -f ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh ] && source ~/bin/dotfiles/bash/bundler-exec/bundler-exec.sh
-
-# chruby!
-[[ ! -a /usr/local/opt/chruby/share/chruby/chruby.sh ]] || source /usr/local/opt/chruby/share/chruby/chruby.sh
-[[ ! -a /usr/local/opt/chruby/share/chruby/auto.sh ]] || source /usr/local/opt/chruby/share/chruby/auto.sh
-
-set -o vi
-
-hitch() {
-  command hitch "$@"
-  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-}
-alias unhitch='hitch -u'
-
-export NVM_DIR=~/.nvm
-source ~/.nvm/nvm.sh
+# bind "set completion-ignore-case on"
+# 
+# set -o vi
+# 
+# hitch() {
+#   command hitch "$@"
+#   if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+# }
+# alias unhitch='hitch -u'
+# 
+# export NVM_DIR=~/.nvm
+# source ~/.nvm/nvm.sh

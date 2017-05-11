@@ -51,4 +51,4 @@ __node_ps1 ()
 }
 
 #PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$NO_COLOR\] \[$RED\]\$(~/.rvm/bin/rvm-prompt)\n♠ \[$NO_COLOR\]"
-PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$RED\]$(__chruby_ps1) \[$UGREEN\]\$(__node_ps1)\[$NO_COLOR\]\n\[$RED\]♠ \[$NO_COLOR\]"
+#PS1="\[\033[G\]\n\[$EGREEN\]\u\[$NO_COLOR\]: \w \[$CYAN\]\$(vcprompt)\[$RED\]$(__chruby_ps1) \[$UGREEN\]\$(__node_ps1)\[$NO_COLOR\]\n\[$RED\]♠ \[$NO_COLOR\]"
